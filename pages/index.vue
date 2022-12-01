@@ -17,4 +17,13 @@
     width: 100vw;
     height: 100vh;
 }
+.btn {
+    display: flex;
+    background-color: #8AA0CC;
+    height: 60px;
+    width: 200px;
+    margin: 0 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
 </style>

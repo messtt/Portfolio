@@ -19,11 +19,18 @@
 }
 .btn {
     display: flex;
-    background-color: #8AA0CC;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D578C;
     height: 60px;
     width: 200px;
     margin: 0 60px;
     font-size: 20px;
     font-weight: 500;
+}
+
+.btn:hover{
+    background-color: #8AA0CC;
+    border-radius: 10px;
 }
 </style>

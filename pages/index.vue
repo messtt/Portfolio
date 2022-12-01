@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3D578C;
+    background-color: #2A3D61;
     height: 60px;
     width: 200px;
     margin: 0 60px;
@@ -31,7 +31,7 @@
 
 .btn:hover{
     background-color: #8AA0CC;
-    animation: glow 1s;
+    animation: glow 0.5s;
 }
 
 @keyframes glow {

@@ -11,7 +11,7 @@
 .mainBox {
     background-color: #3D578C;
     display: flex;
-    flex-direction: v-bind();
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100vw;

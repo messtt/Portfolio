@@ -12,7 +12,7 @@
     justify-content: space-around;
     background-color: #3D578C;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -31,6 +31,7 @@
 
 .btn:hover{
     background-color: #8AA0CC;
+    border-radius: 20px;
     animation: glow 0.5s;
 }
 

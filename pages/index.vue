@@ -29,7 +29,7 @@
     font-weight: 500;
 }
 
-.btn:hover{
+.btn:before:hover{
     background-color: #8AA0CC;
     animation: glow 0.5s;
 }
@@ -41,5 +41,9 @@
   100%{
     border-radius: 20px;
   }
+}
+
+.btn:after{
+    border-radius: 20px;
 }
 </style>

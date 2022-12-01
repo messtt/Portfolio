@@ -3,7 +3,7 @@
       <a href="https://thomy-lorenzatti.notion.site/thomy-lorenzatti/Pr-sentation-JAM-Portfolio-1e8c57ecb4044871bb57198238500928" target="_blank">Thomy</a>
       <a href="https://v3.nuxtjs.org/" target="_blank">Nuxt 3</a>
       <a href="https://vuejs.org/" target="_blank">Vuejs</a>
-      <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github" target="_blank">github</a>
+      <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
     </div>
 </template>
 

@@ -8,7 +8,6 @@
 </template>
 
 <style scoped>
-
 .mainBox {
     background-color: #3D578C;
     display: flex;
@@ -19,6 +18,6 @@
     height: 100vh;
 }
 a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 </style>

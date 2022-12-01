@@ -1,9 +1,9 @@
 <template>
     <div class="mainBox">
-      <a href="https://thomy-lorenzatti.notion.site/thomy-lorenzatti/Pr-sentation-JAM-Portfolio-1e8c57ecb4044871bb57198238500928" target="_blank"><div class="btn">Thomy</div></a>
-      <a href="https://v3.nuxtjs.org/" target="_blank"><div class="btn">Nuxt 3</div></a>
-      <a href="https://vuejs.org/" target="_blank"><div class="btn">Vuejs</div></a>
-      <a href="https://github.com/messtt" target="_blank"><div class="btn">github</div></a>
+      <a href="https://thomy-lorenzatti.notion.site/thomy-lorenzatti/Pr-sentation-JAM-Portfolio-1e8c57ecb4044871bb57198238500928" target="_blank">Thomy</a>
+      <a href="https://v3.nuxtjs.org/" target="_blank">Nuxt 3</a>
+      <a href="https://vuejs.org/" target="_blank">Vuejs</a>
+      <a href="https://github.com/messtt" target="_blank">github</a>
     </div>
 </template>
 
@@ -17,7 +17,7 @@
     width: 100vw;
     height: 100vh;
 }
-.btn {
+a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     font-weight: 500;
 }
 
-.btn:hover{
+a:hover{
     background-color: #8AA0CC;
     border-radius: 20px;
     animation: glow 0.5s;

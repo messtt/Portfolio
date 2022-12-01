@@ -9,11 +9,11 @@
 
 <style scoped>
 .mainBox {
+    justify-content: space-between;
     background-color: #3D578C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
 }
@@ -29,10 +29,11 @@
     font-weight: 500;
 }
 
-.btn:before:hover{
+.btn:hover{
     background-color: #8AA0CC;
     animation: glow 0.5s;
 }
+
 
 @keyframes glow {
   0%{
@@ -41,9 +42,5 @@
   100%{
     border-radius: 20px;
   }
-}
-
-.btn:after{
-    border-radius: 20px;
 }
 </style>

@@ -17,7 +17,7 @@
     width: 100vw;
     height: 100vh;
 }
-a {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +29,9 @@ a {
     font-weight: 500;
 }
 
-a:hover{
+.btn:hover{
     background-color: #8AA0CC;
-    animation: glow 3s;
+    animation: glow 1s;
 }
 
 @keyframes glow {

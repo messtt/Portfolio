@@ -31,6 +31,15 @@ a {
 
 a:hover{
     background-color: #8AA0CC;
-    border-radius: 10px;
+    animation: glow 3s;
+}
+
+@keyframes glow {
+  0%{
+    border-radius: 0;
+  }
+  100%{
+    border-radius: 20px;
+  }
 }
 </style>

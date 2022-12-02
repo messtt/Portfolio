@@ -1,15 +1,15 @@
 <template>
-    <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
     <div class="mainBox">
       <div class="header"><h1>Mon site</h1></div>
       <div class="lien">
@@ -22,9 +22,13 @@
     </div>
 </template>
 <style scoped>
+
 .mainBox {
     justify-content: space-around;
-    background-color: #3D578C;
+    background-color: #330055;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%2336005c' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23390064' cx='50' cy='100' r='50'/%3E%3Cg fill='%233c006b' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%233f0073' cx='50' cy='200' r='50'/%3E%3Cg fill='%2342007b' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23450083' cx='50' cy='300' r='50'/%3E%3Cg fill='%2347008b' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23490093' cx='50' cy='400' r='50'/%3E%3Cg fill='%234c009b' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%234e00a4' cx='50' cy='500' r='50'/%3E%3Cg fill='%234f00ac' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%235100b5' cx='50' cy='600' r='50'/%3E%3Cg fill='%235200be' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%235300c7' cx='50' cy='700' r='50'/%3E%3Cg fill='%235400d0' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%235502d9' cx='50' cy='800' r='50'/%3E%3Cg fill='%235504e2' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%235508ec' cx='50' cy='900' r='50'/%3E%3Cg fill='%23540bf5' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23530FFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -79,18 +83,6 @@
       );
 }
 
-@keyframes bg_anim {
-  0%{
-    color: #000000;
-    background: 0;
-  }
-  100%{
-    background: 400px;
-    color: #3D578C;
-  }
-}
-
-
 .lien{
   display: flex;
   justify-content: space-between;
@@ -98,10 +90,13 @@
 }
 
 a {
+    border-width:2px;
+    border-style: solid;
+    border-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2A3D61;
+    background-color: #8d2eec;
     height: 60px;
     width: 200px;
     margin: 0 60px;
@@ -110,7 +105,7 @@ a {
 }
 
 a:hover{
-    background-color: #8AA0CC;
+    background-color: #8c50f3;
     border-radius: 20px;
     animation: glow 0.5s;
 }
@@ -136,12 +131,13 @@ a:hover{
 }
 
 .background li {
+  background-color: #3D578C;
   position: relative;
   top: 80vh;
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #2f76cd;
+  border: solid 1px #000000;
   color: transparent;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -151,7 +147,7 @@ undefined
 .background li:nth-child(0) {
   animation-delay: 0s;
   left: 45vw;
-  top: 13vh;
+  top: 33vh;
   border-color: #3a91fa;
 }
 
@@ -164,31 +160,31 @@ undefined
 .background li:nth-child(2) {
   animation-delay: 4s;
   left: 27vw;
-  top: 20vh;
+  top: 55vh;
 }
 
 .background li:nth-child(3) {
   animation-delay: 6s;
-  left: 76vw;
-  top: 5vh;
+  left: 70vw;
+  top: 37vh;
 }
 
 .background li:nth-child(4) {
   animation-delay: 8s;
-  left: 99vw;
-  top: 2vh;
+  left: 40vw;
+  top: 54vh;
   border-color: #3a91fa;
 }
 
 .background li:nth-child(5) {
   animation-delay: 10s;
   left: 19vw;
-  top: 26vh;
+  top: 36vh;
 }
 
 .background li:nth-child(6) {
   animation-delay: 12s;
-  left: 85vw;
+  left: 75vw;
   top: 44vh;
   border-color: #3a91fa;
 }

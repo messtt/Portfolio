@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     console.log(config.token)
     const { data } = await axios({
         method: 'get',
-        url: 'https://api.github.com/users/Bastient6/repos',
+        url: 'https://api.github.com/users/messtt/repos',
         headers: {
             Authorization: `Bearer ${config.token}`,
             "content-type": "application/json" ,

@@ -1,7 +1,13 @@
 <template>
     <div class="mainBox">
       <div class="header"><h1>Mon site</h1></div>
-      <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+      <div class="lien">
+        <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+        <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+        <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+        <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+        <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
+      </div>
     </div>
 </template>
 <style scoped>
@@ -21,7 +27,11 @@
     align-items: center;
     font-size: 100px;
 }
-
+.lien{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 a {
     display: flex;
     justify-content: center;

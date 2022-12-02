@@ -9,7 +9,7 @@
     justify-content: space-around;
     background-color: #3D578C;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
     width: 100vw;
     height: 100vh;

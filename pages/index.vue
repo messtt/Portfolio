@@ -50,10 +50,10 @@
 }
 .header:hover{
   z-index: 1;
-  animation: glow 8s linear infinite;
+  animation: ops 8s linear infinite;
 }
 
-@keyframes glow {
+@keyframes ops {
   0% {
     background-position: 0;
   }

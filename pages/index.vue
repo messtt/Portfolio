@@ -1,12 +1,9 @@
 <template>
     <div class="mainBox">
-      <a href="https://thomy-lorenzatti.notion.site/thomy-lorenzatti/Pr-sentation-JAM-Portfolio-1e8c57ecb4044871bb57198238500928" target="_blank">Thomy</a>
-      <a href="https://v3.nuxtjs.org/" target="_blank">Nuxt 3</a>
-      <a href="test.vue" target="_blank">test</a>
-      <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github"><img src="img/25231.png" alt="">github</a>
+      <div class="header"><h1>Mon site</h1></div>
+      <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
     </div>
 </template>
-
 <style scoped>
 .mainBox {
     justify-content: space-around;
@@ -17,6 +14,14 @@
     width: 100vw;
     height: 100vh;
 }
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
 a {
     display: flex;
     justify-content: center;

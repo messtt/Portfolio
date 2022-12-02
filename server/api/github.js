@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
 
     const { data } = await axios({
         method: 'get',
-        url: 'https://api.github.com/users/Shin-gema/repos',
+        url: 'https://api.github.com/users/messtt/repos',
         Headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",

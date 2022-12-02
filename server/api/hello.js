@@ -1,16 +1,17 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default defineEventHandler(async (event) => {
     const config = useRuntimeConfig()
-    console.log(config.token)
-    const { data } = await axios({
-        method: 'get',
-        url: 'https://api.github.com/users/messtt/repos',
+    const instance = axios.create({
+        baseURL: "https://api.github.com",
         headers: {
-            Authorization: `Bearer ${config.token}`,
-            "content-type": "application/json" ,
-            'Accept-Encoding': 'identity'
+            "Authorization": `Bearer ${config.token}`,
+            "Accept": "application/vnd.github+json",
+            "Accept-Encoding": "Identify"
         },
-    })
-    return (data);
-})
+    });
+
+    const response =
+        await instance.get("/user/repos");
+    return response.data;
+});

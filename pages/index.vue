@@ -20,10 +20,11 @@
         <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
       </div>
     </div>
+  <li v-for="project in projects" :key="project.name">
+    <a :href="project.html_url" >{{project.name}}</a>
+  </li>
 </template>
-<h2 v-for="project in data" :key="data.name" >
-            <nuxt-link class="repos" :to="`https://github.com/Bastient6/${project.name}`">{{ project.name }}</nuxt-link>
-        </h2>
+
 <script setup>
     const data = await $fetch('/api/hello')
     console.log(data)
@@ -132,7 +133,7 @@ a:hover{
     opacity: 1;
   }
   to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    transform: scale(10) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
   }
 }

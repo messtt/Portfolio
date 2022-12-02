@@ -541,17 +541,16 @@ server.listen(listenAddress, () => {
 
 const hello = defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
-  console.log(config.token);
-  const { data } = await axios({
-    method: "get",
-    url: "https://api.github.com/users/Bastient6/repos",
+  const instance = axios.create({
+    baseURL: "https://api.github.com",
     headers: {
-      Authorization: `Bearer ${config.token}`,
-      "content-type": "application/json",
-      "Accept-Encoding": "identity"
+      "Authorization": `Bearer ${config.token}`,
+      "Accept": "application/vnd.github+json",
+      "Accept-Encoding": "Identify"
     }
   });
-  return data;
+  const response = await instance.get("/user/repos");
+  return response.data;
 });
 
 const hello$1 = /*#__PURE__*/Object.freeze({
@@ -564,7 +563,7 @@ const token = runTime.GITHUB_TOKEN;
 const github = defineEventHandler(async (event) => {
   const { data } = await axios({
     method: "get",
-    url: "https://api.github.com/users/Shin-gema/repos",
+    url: "https://api.github.com/users/messtt/repos",
     Headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",

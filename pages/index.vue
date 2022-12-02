@@ -10,6 +10,9 @@
       </div>
     </div>
 </template>
+<script type="text/javascript" src="text_anim.js">
+next();
+</script>
 <style scoped>
 .mainBox {
     justify-content: space-around;

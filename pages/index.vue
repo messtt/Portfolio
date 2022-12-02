@@ -1,4 +1,16 @@
 <template>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <div class="mainBox">
       <div class="header"><h1>Mon site</h1></div>
       <div class="lien">
@@ -9,18 +21,6 @@
         <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
       </div>
     </div>
-  <ul class="background">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
 </template>
 <style scoped>
 .mainBox {

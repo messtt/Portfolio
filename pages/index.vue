@@ -27,6 +27,41 @@
     align-items: center;
     font-size: 100px;
 }
+.header:first-child:hover{
+  background: linear-gradient(90deg, #ad04e5, #c33987, #540694, #882194);
+  background-size: 400%;
+}
+.header:first-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.header:first-child:hover:before{
+  top: 50%;
+  right: 15%;
+  bottom: 39%;
+  left: 15%;
+  opacity: 1;
+  z-index: -1;
+}
+.header:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
 .lien{
   display: flex;
   justify-content: space-between;

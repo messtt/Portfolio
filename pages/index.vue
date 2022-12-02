@@ -1,5 +1,6 @@
 <template>
     <div class="mainBox">
+      <div class="header"><h1>Mon site</h1></div>
       <div class="lien">
         <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
         <a href="https://portfolio-gamma-ashy-38.vercel.app/api/github">github</a>
@@ -10,21 +11,6 @@
     </div>
 </template>
 <style scoped>
-.container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.text {
-  font-weight: 100;
-  font-size: 28px;
-  color: #ffffff;
-}
-.dud {
-  color: #080303;
-}
 .mainBox {
     justify-content: space-around;
     background-color: #3D578C;
@@ -35,12 +21,12 @@
     height: 100vh;
 }
 
-/*.header{
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
-}*/
+}
 
 .lien{
   display: flex;

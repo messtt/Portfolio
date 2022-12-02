@@ -27,40 +27,6 @@
     align-items: center;
     font-size: 100px;
 }
-.header:first-child:hover{
-  background: linear-gradient(90deg, #ad04e5, #c33987, #540694, #882194);
-  background-size: 400%;
-}
-.header:first-child:before{
-  content: '';
-  position: absolute;
-  background: inherit;
-  border-radius: 50px;
-  filter: blur(20px);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.header:first-child:hover:before{
-  bottom:25%;
-  left:25%;
-  opacity:1;
-  right:25%;
-  top:1%;
-  z-index:-1
-}
-.header:hover{
-  z-index: 1;
-  animation: ops 8s linear infinite;
-}
-
-@keyframes ops {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
 
 .lien{
   display: flex;
@@ -84,7 +50,6 @@ a:hover{
     border-radius: 20px;
     animation: glow 0.5s;
 }
-
 
 @keyframes glow {
   0%{

@@ -41,12 +41,12 @@
   transition: opacity 0.5s;
 }
 .header:first-child:hover:before{
-  top: 50%;
-  right: 15%;
-  bottom: 39%;
-  left: 15%;
-  opacity: 1;
-  z-index: -1;
+  bottom:25%;
+  left:25%;
+  opacity:1;
+  right:25%;
+  top:1%;
+  z-index:-1
 }
 .header:hover{
   z-index: 1;

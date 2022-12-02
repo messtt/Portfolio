@@ -21,6 +21,13 @@
       </div>
     </div>
 </template>
+<h2 v-for="project in data" :key="data.name" >
+            <nuxt-link class="repos" :to="`https://github.com/Bastient6/${project.name}`">{{ project.name }}</nuxt-link>
+        </h2>
+<script setup>
+    const data = await $fetch('/api/hello')
+    console.log(data)
+</script>
 <style scoped>
 
 .mainBox {
@@ -154,7 +161,7 @@ undefined
 .background li:nth-child(1) {
   animation-delay: 2s;
   left: 4vw;
-  top: 43vh;
+  top: 83vh;
 }
 
 .background li:nth-child(2) {
@@ -165,7 +172,7 @@ undefined
 
 .background li:nth-child(3) {
   animation-delay: 6s;
-  left: 70vw;
+  left: 80vw;
   top: 37vh;
 }
 

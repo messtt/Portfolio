@@ -22,7 +22,7 @@ import unstorage_47drivers_47fs from 'file:///home/mest/Documents/epitech/Portfo
 import defu from 'file:///home/mest/Documents/epitech/Portfolio/Portfolio/node_modules/defu/dist/defu.mjs';
 import { toRouteMatcher, createRouter } from 'file:///home/mest/Documents/epitech/Portfolio/Portfolio/node_modules/radix3/dist/index.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"apiBase":"/api"},"token":""};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -539,10 +539,19 @@ server.listen(listenAddress, () => {
   process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
 }
 
-const hello = defineEventHandler((event) => {
-  return {
-    api: "work"
-  };
+const hello = defineEventHandler(async (event) => {
+  const config = useRuntimeConfig();
+  console.log(config.token);
+  const { data } = await axios({
+    method: "get",
+    url: "https://api.github.com/users/Bastient6/repos",
+    headers: {
+      Authorization: `Bearer ${config.token}`,
+      "content-type": "application/json",
+      "Accept-Encoding": "identity"
+    }
+  });
+  return data;
 });
 
 const hello$1 = /*#__PURE__*/Object.freeze({
